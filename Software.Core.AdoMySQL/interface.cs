@@ -7,9 +7,9 @@ namespace Software.Core.Ado
     {
         //Acciones para la entidad Cliente
         void AltaCliente(Cliente cliente );
-        List<Cliente> ObtenerCliente();
+        List<Cliente> ObtenerProductos();
 
-        void AltaC(Producto producto);
-        List<Producto> ObtenerProductos();
+        void AltaC(cliente cliente);
+        List<cliente> ObtenerProductos();
     }
 }
