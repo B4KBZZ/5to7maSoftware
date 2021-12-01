@@ -1,7 +1,14 @@
-namespace Software
+sing System.Collections.Generic;
+namespace software.Core
 {
-    public class IADO
+    public interface IAdo
     {
+        void AltaCliente(Cliente cliente);
+
+        List<Cliente> ObtenerClientes();       
         
+        void AltaEmpleado(Empleado empleado);
+
+        List<Empleado> ObtenerEmpleados();      
     }
 }
