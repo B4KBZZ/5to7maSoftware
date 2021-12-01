@@ -9,4 +9,9 @@
     <PackageReference Include="BiblioMenu" Version="1.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Software.Core\Software.Core.csproj" />
+    <ProjectReference Include="..\Software.AdoMySQL\Software.AdoMySQL.csproj" />
+  </ItemGroup>
+
 </Project>

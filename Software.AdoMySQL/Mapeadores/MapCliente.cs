@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using softwareFactory.Core;
 using System.Data;
-namespace softwareFactory.AdoMySQL
+namespace softwareFactory.AdoMySQL.Mapeadores
 {
     public class MapCliente: Mapeador<Cliente>
     {
