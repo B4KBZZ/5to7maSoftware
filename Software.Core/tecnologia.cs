@@ -4,7 +4,7 @@ namespace Software
     {
         public int Id { get; set; }
 
-        public string Tecnologia { get; set; }
+        public string tecnologia { get; set; }
 
         public decimal CostoBase { get; set; }
     }   

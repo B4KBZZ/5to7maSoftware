@@ -1,7 +1,5 @@
 namespace Admin.Consola.menu
 {
-    public class Ver.Empleado
-    {
-        
-    }
-}
+    public class Ver Empleado
+    
+}    

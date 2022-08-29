@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using et12.edu.ar.AGBD.Ado;
+using softwareFactory.AdoMySQL.Mapeadores;
 
 namespace Software.AdoMySQL
 {
@@ -13,7 +14,7 @@ namespace Software.AdoMySQL
             MapCliente = new MapCliente (Ado);
         }
 
-        public void AltaCliente (cliente cliente) => MapCliente.AltaCliente (cliente);
+        public void AltaCliente (Cliente cliente) => MapCliente.AltaCliente (cliente);
         public List<Cliente> ObtenerClientes()    => MapCliente.ObtenerClientes(); 
         var adoAGBD = FactoryAdoAGBD.GetAdoMySQL("appSettings.json", "root");
     }

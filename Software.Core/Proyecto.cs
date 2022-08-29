@@ -1,10 +1,12 @@
+using System;
+
 namespace Software
 {
     public class Proyecto
     {
         public int Id { get; set; }
 
-        public cliente Cliente { get; set; }
+        public Cliente Cliente { get; set; }
 
         public string Descripcion { get; set; }
 

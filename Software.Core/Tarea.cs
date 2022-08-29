@@ -1,14 +1,17 @@
+using System;
+
 namespace Software
 {
     public class Tarea
     {
-        public requerimiento Requerimiento { get; set; }
+        public Requerimiento Requerimiento { get; set; }
 
-        public empleado Empleado { get; set; }
+        public Empleado Empleado { get; set; }
 
         public DateTime Inicio { get; set; }
 
         public DateTime Fin { get; set; }
 
     }
+
 }

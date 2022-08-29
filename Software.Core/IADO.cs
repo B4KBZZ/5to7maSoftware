@@ -1,4 +1,6 @@
-sing System.Collections.Generic;
+using Software;
+
+using System.Collections.Generic;
 namespace software.Core
 {
     public interface IAdo

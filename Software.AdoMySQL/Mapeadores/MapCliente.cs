@@ -2,8 +2,9 @@
 using et12.edu.ar.AGBD.Ado;
 using System;
 using System.Collections.Generic;
-using softwareFactory.Core;
 using System.Data;
+using Software;
+
 namespace softwareFactory.AdoMySQL.Mapeadores
 {
     public class MapCliente: Mapeador<Cliente>
@@ -17,8 +18,20 @@ namespace softwareFactory.AdoMySQL.Mapeadores
                 Cuit: Convert.ToInt32(fila["Cuit"]),
                 RazonSocial : fila["RazonSocial"].ToString()
             );
+
+        internal void AltaCliente(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
         public void altaCliente(Cliente cliente)
             => EjecutarComandoCon("altaCliente", ConfigurarAltaCliente, PostAltaCliente, cliente);
+
+        private void PostAltaCliente(Cliente obj)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ConfigurarAltaCliente(Cliente cliente)
         {
             SetComandoSP("altaCliente");
@@ -34,3 +47,4 @@ namespace softwareFactory.AdoMySQL.Mapeadores
         }
         public List<Cliente> ObtenerClientes() => ColeccionDesdeTabla();
     }
+}

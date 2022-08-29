@@ -1,13 +1,16 @@
-using et12.edu.ar.AGBD.Mapeadores;
 using et12.edu.ar.AGBD.Ado;
+using Software;
 using System;
 using System.Collections.Generic;
-using softwareFactory.Core;
 using System.Data;
 namespace softwareFactory.AdoMySQL.Mapeadores
 {
     public class MapEmpleado
 {
+    public string Tabla { get; private set; }
+    public object PostAltaEmpleado { get; private set; }
+        public object BP { get; private set; }
+
         public MapEmpleado(AdoAGBD ado):base(ado)
         {
             Tabla = "Empleado";
@@ -22,6 +25,12 @@ namespace softwareFactory.AdoMySQL.Mapeadores
             );
         public void altaEmpleado(Empleado empleado)
             => EjecutarComandoCon("altaEmpleado", ConfigurarAltaEmpleado, PostAltaEmpleado, empleado);
+
+        private void EjecutarComandoCon(string v, Action<Empleado> configurarAltaEmpleado, object postAltaEmpleado, Empleado empleado)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ConfigurarAltaEmpleado(Empleado empleado)
         {
             SetComandoSP("altaEmpleado");
@@ -46,6 +55,22 @@ namespace softwareFactory.AdoMySQL.Mapeadores
                 SetValor(Empleado.Contratacion)
                 .AgregarParametro();
         }
-        public List<empleado> ObtenerEmpleados() => ColeccionDesdeTabla();
+
+        private object SetValor(DateTime contratacion)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SetComandoSP(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Empleado> ObtenerEmpleados() => ColeccionDesdeTabla();
+
+        private List<Empleado> ColeccionDesdeTabla()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

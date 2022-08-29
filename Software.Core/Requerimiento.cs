@@ -1,12 +1,12 @@
 namespace Software
 {
-    public class Requermiento
+    public class Requerimiento
     {
         public int Id { get; set; }
 
-        public proyecto Proyecto { get; set; }
+        public Proyecto Proyecto { get; set; }
 
-        public tecnologia Tecnologia { get; set; }
+        public Tecnologia Tecnologia { get; set; }
 
         public string Descripcion { get; set; }
 

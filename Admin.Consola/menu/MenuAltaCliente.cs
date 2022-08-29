@@ -1,14 +1,18 @@
-using MenuesConsola;
+using et12.edu.ar.MenuesConsola;
 using Software;
 using System;
-using static System.ReadLine;
-
 namespace Admin.Consola.menu
 {
     public class MenuAltaCliente: MenuComponente
 
     {
+        private Cajero Cajero;
+
         public Cliente Cliente { get; set; }
+        private object ReadPassword(string v)
+        {
+            throw new NotImplementedException();
+        }
         public override void mostrar()
 
         {
@@ -39,5 +43,19 @@ namespace Admin.Consola.menu
             }
             Console.ReadKey();
         }
+
+        
+    }
+
+    internal class Cajero
+    {
+        public Cajero()
+        {
+        }
+
+        public string Apellido { get; set; }
+        public string Nombre { get; set; }
+        public int Dni { get; set; }
+        public object Password { get; set; }
     }
 }
