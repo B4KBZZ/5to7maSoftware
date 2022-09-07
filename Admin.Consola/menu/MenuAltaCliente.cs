@@ -1,7 +1,10 @@
 using et12.edu.ar.MenuesConsola;
 using Software;
 using System;
-namespace Admin.Consola.menu
+using et12.edu.ar.AGBD.Ado;
+using System.Collections.Generic;
+
+    namespace Admin.Consola.menu
 {
     public class MenuAltaCliente: MenuComponente
 
