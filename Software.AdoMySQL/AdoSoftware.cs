@@ -6,8 +6,10 @@ using softwareFactory.AdoMySQL.Mapeadores;
     {
     public class AdoSoftware
     {
-        public AdoAGBD Ado {get; set}
-        public MapCliente MapCliente {get; set}
+        public AdoAGBD Ado {get; set;}
+        public MapCliente MapCliente {get; set;}
+        public static object ADO { get; set; }
+
         public AdoSoftware(AdoAGBD ado)
         {
             Ado = ado;

@@ -3,6 +3,7 @@ using Software;
 using System;
 using et12.edu.ar.AGBD.Ado;
 using System.Collections.Generic;
+using Software.AdoMySQL;
 
     namespace Admin.Consola.menu
 {
@@ -10,6 +11,7 @@ using System.Collections.Generic;
 
     {
         private Cajero Cajero;
+        private object AdoGerente;
 
         public Cliente Cliente { get; set; }
         private object ReadPassword(string v)
@@ -45,9 +47,7 @@ using System.Collections.Generic;
                 Console.WriteLine($"No se pudo dar de alta: {e.Message}");
             }
             Console.ReadKey();
-        }
-
-        
+        }     
     }
 
     internal class Cajero
@@ -55,7 +55,6 @@ using System.Collections.Generic;
         public Cajero()
         {
         }
-
         public string Apellido { get; set; }
         public string Nombre { get; set; }
         public int Dni { get; set; }

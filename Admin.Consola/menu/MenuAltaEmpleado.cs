@@ -1,6 +1,7 @@
 using et12.edu.ar.MenuesConsola;
 using Software;
 using System;
+using Software.AdoMySQL;
 
 namespace Admin.Consola.menu
 {
