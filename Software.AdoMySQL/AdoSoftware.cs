@@ -18,6 +18,6 @@ using softwareFactory.AdoMySQL.Mapeadores;
 
         public void AltaCliente (Cliente cliente) => MapCliente.AltaCliente (cliente);
         public List<Cliente> ObtenerClientes()    => MapCliente.ObtenerClientes(); 
-        var AdoAGBD = FactoryAdoAGBD.GetAdoMySQL("appSettings.json", "root");
+        
     }
 }

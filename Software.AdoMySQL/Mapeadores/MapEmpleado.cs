@@ -47,7 +47,7 @@ namespace softwareFactory.AdoMySQL.Mapeadores
                 .AgregarParametro();
 
             BP.CrearParametro("Contratacion")
-                .SetTipoDatetime()
+                .SetTipo(MySql.Data.MySqlClient.MySqlDbType.DateTime)
                 .SetValor(empleado.Contratacion)
                 .AgregarParametro();
         }
