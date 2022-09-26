@@ -13,8 +13,6 @@ using Software.AdoMySQL;
         private Cajero Cajero;
         private object AdoGerente;
         private object AdoAGBD; 
-        -++++
-        ...
         public Cliente Cliente { get; set; }
         private object ReadPassword(string v)
         {
